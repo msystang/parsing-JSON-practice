@@ -15,7 +15,7 @@ enum JSONError: Error {
 struct Color: Codable {
     let name: ColorName
     let hex: ColorHex
-    let rgb: ColorRGB
+    var rgb: ColorRGB
     let a: Int = 1
   
     static func getColors(from colorData: Data) throws -> [Color] {

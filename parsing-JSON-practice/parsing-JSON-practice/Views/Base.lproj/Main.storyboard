@@ -66,7 +66,7 @@
         <!--Color Details View Controller-->
         <scene sceneID="Zjg-J2-lyK">
             <objects>
-                <viewController id="buy-Jd-Zr8" userLabel="Color Details View Controller" sceneMemberID="viewController">
+                <viewController id="buy-Jd-Zr8" userLabel="Color Details View Controller" customClass="ColorDetailsViewController" customModule="parsing_JSON_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gWd-Ge-crJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,6 +111,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BbR-lQ-6Qd"/>
                     </view>
+                    <connections>
+                        <outlet property="blueLabel" destination="34t-Rr-78c" id="h9w-dX-V1u"/>
+                        <outlet property="greenLabel" destination="IxH-p5-vVc" id="RQB-Ct-EQ7"/>
+                        <outlet property="hexLabel" destination="zMG-UJ-cVK" id="xxZ-D8-evx"/>
+                        <outlet property="redLabel" destination="64z-ks-AhB" id="v6O-cS-cwO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1K-0m-XmL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
