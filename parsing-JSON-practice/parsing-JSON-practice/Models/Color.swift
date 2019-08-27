@@ -15,15 +15,8 @@ enum JSONError: Error {
 struct Color: Codable {
     let name: ColorName
     let hex: ColorHex
-    var r: Int
-    var g: Int
-    var b: Int
-    
-    private mutating func convertRGBValues() {
-        self.r /= 255
-        self.g /= 255
-        self.b /= 255
-    }
+    let rgb: ColorRGB
+    let a: Int = 1
   
     static func getColors(from colorData: Data) throws -> [Color] {
         do {
@@ -46,3 +39,14 @@ struct ColorHex: Codable {
     let value: String
 }
 
+struct ColorRGB: Codable {
+    var r: Double
+    var g: Double
+    var b: Double
+    
+    mutating func convertValue() {
+        self.r /= 255
+        self.g /= 255
+        self.b /= 255
+    }
+}
