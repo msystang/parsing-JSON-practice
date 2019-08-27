@@ -27,18 +27,18 @@ struct User: Codable {
     }
 }
 
-struct NameWrapper: Codable {
+struct UserNameWrapper: Codable {
     let first: String
     let last: String
 }
 
-struct LocationWrapper: Codable {
+struct UserLocationWrapper: Codable {
     let street: String
     let city: String
     let state: String
     let postcode: Int
 }
 
-struct DOBWrapper: Codable {
+struct UserDOBWrapper: Codable {
     let date: String
 }

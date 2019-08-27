@@ -9,9 +9,9 @@
 import Foundation
 
 struct Color: Codable {
-    let name: ColorName
-    let hex: ColorHex
-    var rgb: ColorRGB
+    let name: ColorNameWrapper
+    let hex: ColorHexWrapper
+    var rgb: ColorRGBWrapper
     let a: Int = 1
   
     static func getColors(from colorData: Data) throws -> [Color] {
@@ -28,15 +28,15 @@ struct Color: Codable {
 }
 
 //refactor name with wrapper
-struct ColorName: Codable {
+struct ColorNameWrapper: Codable {
     let value: String
 }
 
-struct ColorHex: Codable {
+struct ColorHexWrapper: Codable {
     let value: String
 }
 
-struct ColorRGB: Codable {
+struct ColorRGBWrapper: Codable {
     var r: Double
     var g: Double
     var b: Double
