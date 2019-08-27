@@ -46,6 +46,20 @@ class ColorListViewController: UIViewController {
             fatalError("Couldn't get colors from JSON")
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "colorCellToDetailsSegue" else { fatalError("Incorrect segue identifier")}
+        
+        guard let selectedIndexPath = self.colorListTableView.indexPathForSelectedRow else {
+            fatalError("No row was selected")
+        }
+        guard let colorDetailVC = segue.destination as? ColorDetailsViewController else {
+            fatalError("No destination VC")
+        }
+        
+      colorDetailVC.color = colors[selectedIndexPath.row]
+        
+    }
 
 }
 
