@@ -8,25 +8,34 @@
 
 import UIKit
 
-class UserDetailsViewController: UIViewController {
+class UserDetailsViewController: UIViewController, UITextViewDelegate {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var streetLabel: UILabel!
+    @IBOutlet weak var stateLabel: UILabel!
+    @IBOutlet weak var cityLabel: UILabel!
+    @IBOutlet weak var zipLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var birthdateLabel: UILabel!
+    
     var user: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUp()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func setUp() {
+        if let user = user {
+            nameLabel.text = "\(user.name.first) \(user.name.last)"
+            // make labels for each address part
+            streetLabel.text = user.location.street
+            cityLabel.text = user.location.city
+            stateLabel.text = user.location.state
+            zipLabel.text = "\(user.location.postcode)"
+            phoneLabel.text = "Phone: \(user.phone)"
+            birthdateLabel.text = "DOB: \(user.dob.date)"
+        }
     }
-    */
 
 }
