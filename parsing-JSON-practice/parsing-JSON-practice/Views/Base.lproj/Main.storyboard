@@ -13,7 +13,7 @@
         <!--Colors List View Controller-->
         <scene sceneID="iT3-Hx-1WT">
             <objects>
-                <viewController id="XEY-sD-bxE" userLabel="Colors List View Controller" sceneMemberID="viewController">
+                <viewController id="XEY-sD-bxE" userLabel="Colors List View Controller" customClass="ColorListViewController" customModule="parsing_JSON_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="84j-py-5LE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
