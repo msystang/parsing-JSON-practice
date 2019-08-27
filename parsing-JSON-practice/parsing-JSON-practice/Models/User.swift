@@ -9,11 +9,11 @@
 import Foundation
 
 struct User: Codable {
-    let name: NameWrapper
+    let name: UserNameWrapper
     let email: String
-    let location: LocationWrapper
+    let location: UserLocationWrapper
     let phone: String
-    let dob: DOBWrapper
+    let dob: UserDOBWrapper
     
     static func getUsers(from userData: Data) throws -> [User] {
         do {
