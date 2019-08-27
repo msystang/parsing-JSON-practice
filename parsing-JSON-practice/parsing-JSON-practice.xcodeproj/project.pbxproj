@@ -19,6 +19,7 @@
 		EA0ED1412315B91E0006C3C5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1402315B91E0006C3C5 /* Color.swift */; };
 		EA0ED1432315C9740006C3C5 /* ColorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1422315C9740006C3C5 /* ColorDetailsViewController.swift */; };
 		EA0ED1452315CED10006C3C5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1442315CED10006C3C5 /* User.swift */; };
+		EA0ED1472315D1FB0006C3C5 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1462315D1FB0006C3C5 /* JSONError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		EA0ED1402315B91E0006C3C5 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EA0ED1422315C9740006C3C5 /* ColorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailsViewController.swift; sourceTree = "<group>"; };
 		EA0ED1442315CED10006C3C5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "parsing-JSON-practice/Models/User.swift"; sourceTree = SOURCE_ROOT; };
+		EA0ED1462315D1FB0006C3C5 /* JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		EA0ED13B2315ADFD0006C3C5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EA0ED1462315D1FB0006C3C5 /* JSONError.swift */,
 				EA0ED1402315B91E0006C3C5 /* Color.swift */,
 				EA0ED1442315CED10006C3C5 /* User.swift */,
 			);
@@ -297,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0ED1472315D1FB0006C3C5 /* JSONError.swift in Sources */,
 				EA0ED10E2315A92F0006C3C5 /* ColorListViewController.swift in Sources */,
 				EA0ED10C2315A92F0006C3C5 /* AppDelegate.swift in Sources */,
 				EA0ED1432315C9740006C3C5 /* ColorDetailsViewController.swift in Sources */,

@@ -22,7 +22,7 @@ struct User: Codable {
                 decoder.decode([User].self, from: userData)
             return users
         } catch {
-            throw fatalError()
+            throw JSONError.decodingError(error)
         }
     }
 }

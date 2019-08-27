@@ -8,10 +8,6 @@
 
 import Foundation
 
-enum JSONError: Error {
-    case decodingError(Error)
-}
-
 struct Color: Codable {
     let name: ColorName
     let hex: ColorHex
