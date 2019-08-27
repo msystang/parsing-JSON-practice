@@ -36,7 +36,7 @@ struct LocationWrapper: Codable {
     let street: String
     let city: String
     let state: String
-    let postcode: String
+    let postcode: Int
 }
 
 struct DOBWrapper: Codable {

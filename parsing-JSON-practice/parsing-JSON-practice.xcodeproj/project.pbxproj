@@ -20,6 +20,8 @@
 		EA0ED1432315C9740006C3C5 /* ColorDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1422315C9740006C3C5 /* ColorDetailsViewController.swift */; };
 		EA0ED1452315CED10006C3C5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1442315CED10006C3C5 /* User.swift */; };
 		EA0ED1472315D1FB0006C3C5 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1462315D1FB0006C3C5 /* JSONError.swift */; };
+		EA0ED1492315D34C0006C3C5 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1482315D34C0006C3C5 /* UserListViewController.swift */; };
+		EA0ED14B2315D36A0006C3C5 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED14A2315D36A0006C3C5 /* UserDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		EA0ED1422315C9740006C3C5 /* ColorDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailsViewController.swift; sourceTree = "<group>"; };
 		EA0ED1442315CED10006C3C5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = "parsing-JSON-practice/Models/User.swift"; sourceTree = SOURCE_ROOT; };
 		EA0ED1462315D1FB0006C3C5 /* JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
+		EA0ED1482315D34C0006C3C5 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserListViewController.swift; path = "parsing-JSON-practice/Controllers/UserListViewController.swift"; sourceTree = SOURCE_ROOT; };
+		EA0ED14A2315D36A0006C3C5 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,8 @@
 			children = (
 				EA0ED10D2315A92F0006C3C5 /* ColorListViewController.swift */,
 				EA0ED1422315C9740006C3C5 /* ColorDetailsViewController.swift */,
+				EA0ED1482315D34C0006C3C5 /* UserListViewController.swift */,
+				EA0ED14A2315D36A0006C3C5 /* UserDetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -300,11 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA0ED1492315D34C0006C3C5 /* UserListViewController.swift in Sources */,
 				EA0ED1472315D1FB0006C3C5 /* JSONError.swift in Sources */,
 				EA0ED10E2315A92F0006C3C5 /* ColorListViewController.swift in Sources */,
 				EA0ED10C2315A92F0006C3C5 /* AppDelegate.swift in Sources */,
 				EA0ED1432315C9740006C3C5 /* ColorDetailsViewController.swift in Sources */,
 				EA0ED1452315CED10006C3C5 /* User.swift in Sources */,
+				EA0ED14B2315D36A0006C3C5 /* UserDetailsViewController.swift in Sources */,
 				EA0ED1412315B91E0006C3C5 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

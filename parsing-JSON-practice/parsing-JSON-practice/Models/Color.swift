@@ -27,6 +27,7 @@ struct Color: Codable {
 
 }
 
+//refactor name with wrapper
 struct ColorName: Codable {
     let value: String
 }

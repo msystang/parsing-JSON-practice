@@ -219,7 +219,7 @@
         <!--User Details View Controller-->
         <scene sceneID="5hG-cS-FYA">
             <objects>
-                <viewController id="DGq-8e-f4c" userLabel="User Details View Controller" sceneMemberID="viewController">
+                <viewController id="DGq-8e-f4c" userLabel="User Details View Controller" customClass="UserDetailsViewController" customModule="parsing_JSON_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OHo-dt-Z2S">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,7 +290,7 @@
         <!--Users View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Users View Controller" customClass="ViewController" customModule="parsing_JSON_practice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Users View Controller" customClass="UserListViewController" customModule="parsing_JSON_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,6 +339,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="7Zt-5X-h6R"/>
+                    <connections>
+                        <outlet property="userListTableView" destination="QCU-ST-gfU" id="K43-cm-zL4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
