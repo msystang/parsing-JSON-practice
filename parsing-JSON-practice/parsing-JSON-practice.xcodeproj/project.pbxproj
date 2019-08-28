@@ -22,6 +22,7 @@
 		EA0ED1472315D1FB0006C3C5 /* JSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1462315D1FB0006C3C5 /* JSONError.swift */; };
 		EA0ED1492315D34C0006C3C5 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED1482315D34C0006C3C5 /* UserListViewController.swift */; };
 		EA0ED14B2315D36A0006C3C5 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0ED14A2315D36A0006C3C5 /* UserDetailsViewController.swift */; };
+		EAE49FBC23170C7D00FF2758 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = EAE49FBB23170C7D00FF2758 /* cities.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		EA0ED1462315D1FB0006C3C5 /* JSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONError.swift; sourceTree = "<group>"; };
 		EA0ED1482315D34C0006C3C5 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserListViewController.swift; path = "parsing-JSON-practice/Controllers/UserListViewController.swift"; sourceTree = SOURCE_ROOT; };
 		EA0ED14A2315D36A0006C3C5 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		EAE49FBB23170C7D00FF2758 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		EA0ED10A2315A92F0006C3C5 /* parsing-JSON-practice */ = {
 			isa = PBXGroup;
 			children = (
+				EAE49FBB23170C7D00FF2758 /* cities.json */,
 				EA0ED13C2315B86F0006C3C5 /* colors.json */,
 				EA0ED13E2315B8D90006C3C5 /* users.json */,
 				EA0ED13B2315ADFD0006C3C5 /* Models */,
@@ -277,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE49FBC23170C7D00FF2758 /* cities.json in Resources */,
 				EA0ED13F2315B8D90006C3C5 /* users.json in Resources */,
 				EA0ED1162315A9310006C3C5 /* LaunchScreen.storyboard in Resources */,
 				EA0ED13D2315B86F0006C3C5 /* colors.json in Resources */,
