@@ -11,7 +11,7 @@ import Foundation
 struct City: Codable {
     let name: String
     let main: CityTempWrapper
-    let weather: CityWeatherWrapper
+    let weather: [CityWeatherWrapper]
 
     static func getCities(from cityData: Data) throws -> [City] {
         do {

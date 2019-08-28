@@ -125,7 +125,7 @@
         <!--Weather Of Cities View Controller-->
         <scene sceneID="keC-mr-AdX">
             <objects>
-                <viewController id="TWd-nM-aGd" userLabel="Weather Of Cities View Controller" sceneMemberID="viewController">
+                <viewController id="TWd-nM-aGd" userLabel="Weather Of Cities View Controller" customClass="CitiesListViewController" customModule="parsing_JSON_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6vI-lq-ItA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -167,6 +167,9 @@
                         <viewLayoutGuide key="safeArea" id="R2I-us-ICB"/>
                     </view>
                     <navigationItem key="navigationItem" id="6Tc-wi-kIX"/>
+                    <connections>
+                        <outlet property="citiesListTableView" destination="aRN-DN-CZf" id="wCR-sF-T8A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tgc-85-s4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
