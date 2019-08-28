@@ -214,6 +214,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="LwG-cy-UVl"/>
                     </view>
+                    <connections>
+                        <outlet property="cityNameLabel" destination="KHY-3N-o1T" id="cQW-Cd-xag"/>
+                        <outlet property="cityTempLabel" destination="CZz-xy-1T1" id="tdg-eP-Zzv"/>
+                        <outlet property="cityWeatherLabel" destination="brU-zD-2o2" id="XpF-xa-oWS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5dB-yW-tcj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

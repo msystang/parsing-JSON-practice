@@ -10,23 +10,24 @@ import UIKit
 
 class CityDetailsViewController: UIViewController {
 
+    @IBOutlet weak var cityNameLabel: UILabel!
+    @IBOutlet weak var cityTempLabel: UILabel!
+    @IBOutlet weak var cityWeatherLabel: UILabel!
+    
     var city: City?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        updateLabels()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateLabels() {
+        if let city = city {
+            cityNameLabel.text = city.name
+            cityTempLabel.text = "Temp: \(city.main.temp) F"
+            cityWeatherLabel.text = "Weather: \(city.weather[0].description)"
+        }
     }
-    */
+ 
 
 }
