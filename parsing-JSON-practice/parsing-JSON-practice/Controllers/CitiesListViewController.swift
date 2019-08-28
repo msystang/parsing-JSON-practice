@@ -41,7 +41,16 @@ class CitiesListViewController: UIViewController {
         } catch {
             fatalError("Couldn't get cities from JSON: \(error)")
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "cityCellToDetailsSegue" else { fatalError("Incorrect segue identifier") }
         
+        guard let selectedIndexPath = self.citiesListTableView.indexPathForSelectedRow else { fatalError("No row was selected") }
+        
+        guard let cityDetailVC = segue.destination as? CityDetailsViewController else { fatalError("No destination VC") }
+        
+        cityDetailVC.city = cities[selectedIndexPath.row]
     }
     
     

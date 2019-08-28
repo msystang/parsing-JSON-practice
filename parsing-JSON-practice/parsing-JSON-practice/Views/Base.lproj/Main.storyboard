@@ -178,7 +178,7 @@
         <!--Weather Details View Controller-->
         <scene sceneID="w09-8j-v62">
             <objects>
-                <viewController id="bRd-jr-cr2" userLabel="Weather Details View Controller" sceneMemberID="viewController">
+                <viewController id="bRd-jr-cr2" userLabel="Weather Details View Controller" customClass="CityDetailsViewController" customModule="parsing_JSON_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="97m-8r-pmq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

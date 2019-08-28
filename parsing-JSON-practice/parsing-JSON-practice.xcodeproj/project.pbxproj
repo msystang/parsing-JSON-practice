@@ -25,6 +25,7 @@
 		EAE49FBC23170C7D00FF2758 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = EAE49FBB23170C7D00FF2758 /* cities.json */; };
 		EAE49FBE23170D0900FF2758 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE49FBD23170D0900FF2758 /* City.swift */; };
 		EAE49FC023170E7D00FF2758 /* CitiesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE49FBF23170E7D00FF2758 /* CitiesListViewController.swift */; };
+		EAE49FC2231712B600FF2758 /* CityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE49FC1231712B600FF2758 /* CityDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		EAE49FBB23170C7D00FF2758 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		EAE49FBD23170D0900FF2758 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		EAE49FBF23170E7D00FF2758 /* CitiesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitiesListViewController.swift; sourceTree = "<group>"; };
+		EAE49FC1231712B600FF2758 /* CityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CityDetailsViewController.swift; path = "parsing-JSON-practice/Controllers/CityDetailsViewController.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				EAE49FBF23170E7D00FF2758 /* CitiesListViewController.swift */,
+				EAE49FC1231712B600FF2758 /* CityDetailsViewController.swift */,
 				EA0ED10D2315A92F0006C3C5 /* ColorListViewController.swift */,
 				EA0ED1422315C9740006C3C5 /* ColorDetailsViewController.swift */,
 				EA0ED1482315D34C0006C3C5 /* UserListViewController.swift */,
@@ -325,6 +328,7 @@
 				EA0ED1452315CED10006C3C5 /* User.swift in Sources */,
 				EA0ED14B2315D36A0006C3C5 /* UserDetailsViewController.swift in Sources */,
 				EA0ED1412315B91E0006C3C5 /* Color.swift in Sources */,
+				EAE49FC2231712B600FF2758 /* CityDetailsViewController.swift in Sources */,
 				EAE49FC023170E7D00FF2758 /* CitiesListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
