@@ -28,7 +28,6 @@ class UserDetailsViewController: UIViewController, UITextViewDelegate {
     func setUp() {
         if let user = user {
             nameLabel.text = "\(user.name.first) \(user.name.last)"
-            // make labels for each address part
             streetLabel.text = user.location.street
             cityLabel.text = user.location.city
             stateLabel.text = user.location.state
